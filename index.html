@@ -10,50 +10,7 @@
     </head>
 
 	<body>
-		<h1>LISTA KOMEND</h1>
-		<h3>git config --global user.name ""</h3>
-		<p> komenda, którą po instalacji Git'a ustala się swoją nazwę użytkownika. Utowrzony commit używa tych informacji i jest z nią związany. Opcja "--global" dokonuje tej konfiguracji jednorazowo tzn., że Git skorzysta z niej podczas każdej operacji wykonywanej przez użytkownika w systemie. (Przykład: git config --global user.name "Tomasz Kowalski")</p>
-		<h3>git config --global user.email ""</h3> 
-		<p>to samo co w git config --global user.name "" aczkolwiek zamiast nazwy użytkownika konfiguruje się adres e-mail. (Przykład: git config --global user.email "tomasz.kowalski@gmail.com")</p>
-		<h3>git config --global color.ui true</h3>
-		<p>komenda, dzięki której Git automatycznie koloruje większość wyjścia.</p>
-		<h3>git branch --merged</h3>
-		<p>komenda, którą należy wpisać, gdy się chce zobaczyć wszystkie gałęzie przyłączone do obecnego brancha</p>
-		<h3>git branch "branch" "commit hash"</h3>
-		<p>komenda, która tworzy gałąź ze specyficznego commita, który znajduje się juz w innej gałęzi.</p>
-		<h3>git branch -d "branch"</h3>
-		<p>komenda ta słuzy do usunięcia danego lokalnego brancha, który był juz przekazany do zawartości repozytorium zdalnego i połączony  z główną gałęzią.</p>
-		<h3>git branch -v</h3>
-		<p>komenda ta słuzy do tego, aby zobaczyć ostatnie rewizje na poszczególnych gałęziach.</p>
-		<h3>git branch "name"</h3>
-		<p>komenda, która tworzy nowego brancha o nazwie "name". (Przykład: git branch "nowy_branch")</p>
-		<h3>git commit "filename"</h3>
-		<p>komenda ta zatwierdza i zapisuje zmiany dokonane w pliku o nazwie "filename". </p>
-		<h3>git commit -a -m ""</h3>
-		<p>komenda ta zatwierdza zmiany. Po wykonaniu tego procesu, zawartość plików zapisywana jest jako migawka projektu w katalogu Git. Dzięki opcji -a wszystkie zmiany które nastąpiły w plikach i nie zostały dodane do poczekalni, również zostaną uwzględnione. Opcja -m dodaje wiadomość/ komentarz do commita.</p>
-		<h3>git reset HEAD</h3>
-		<p>komenda, której używamy, gdy zmiany, które wprowadziliśmy do commita nie są poprawne i chcielibyśmy je zmienić/ wycofać. Przywraca ostatnią wersję commita. np git reset HEAD (cofa o jeden commit)</p>
-		<h3>gitk -all</h3>
-		<p>przeglądarka repozytorium Git'a. Dzięki opcji "-all" ukazuje zmiany w repozytorium lub zaznaczonych commitach.</p>
-		<h3>git pull "remote" "branch"</h3>
-		<p>komendy tej uzywamy, jeśli zostały wprowadzone jakieś zmiany w repozytorium zdalnym i chcemy je pobrać do naszego repozytorium lokalnego.</p>
-		<h3>git diff --staged</h3>
-		<p>komenda ta słuzy do sprawdzenia jakie zmiany trafiły do poczekalni z istniejącym repozytorium.</p>
-		<h3>git log --graph --all</h3>
-		<p>ukazuje logi z commitów, -- graph ukazuje na podstawie tekstu graficzną reprezentacje historii commitów, -- all ukazuje wszystkie commity w historii</p>
-		<h3>git fetch "remote" "branch"</h3>
-		<p>komendy tej uzywamy, gdy chcemy uzyskać dane ze zdalnego projektu do naszej lokalnej gałęzi.</p>
-		<h3>git push "remote" "branch"</h3>
-		<p>komendy tej uzywamy kiedy chcemu wypchnąć swoje dokonane zmiany na zewnątrz. Uzywa się jej kiedy możesz i chcesz już podzielić się swoją pracą z innymi.</p>
-		<h3>git log "branch" --not "branch"</h3>
-		<p>komenda ta pokazuje wszystkie commity, które są w pierwszej gałęzi, ale nie ma ich w drugiej.</p>
-		<h3>git bisect (start, bad, good, reset)</h3>
-		<p>komenda, która pozwala na znalezienie jednego konkretnego commita, który jest be i psuje nam aplikację. Opcja "start" przeprowadza krok po kroku przez proces eliminacji dopóki znajdzie commit, który jest przyczyną błędu. Opcją "good" dajemy znać git bisect wizard'owi, który commit jest poprawny, a opcją "bad"- który jest błędny. Opcja "reset" kończy pracę git bisect wizard.</p>
-		<h3>git add .</h3>
-		<p>komenda, która służy do dodania pliku do poczekalni. Zapisuje wszystkie nowe zmiany w pliku. Po niej zazwyczaj uzywa się komendy git commit.</p>
 		<h3>git remote add "remote_name" "git url"</h3>
 		<p>komenda służąca do dodania nowego zdalnego repozytorium, która przyjmuje dwa argumenty: "remote_name" czyli nazwę zdalnego repozytorium oraz url do niego "git url". (Przykład: git remote add "nazwa" "https://github.com/user/repo.git")</p>
-		<h3>git blame -C "filename"</h3>
-		<p>komenda, która służy do znalezienia linijek kodu przeniesionych lub skopiowanych z innych plików, które były zmodyfikwane w tym samym commicie. </p>
-	</body>
+		
 </html>
