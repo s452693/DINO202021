@@ -1,59 +1,11 @@
 <html>
 	<body>
-			
-		git config --global user.name ""
+		<h2> git reset HEAD </h2>
 			<ul>
-				<li> ustawia globalną nazwę użytkownika (w raz ustawioną już nie trzeba ingerować) </li>
-				<li> każdy utworzony przez użytkownika commit będzie uwzględniał tę nazwę w sobie, określając Twoją tożsamość </li>
-				<li> git config --global user.name "Bezimienny" </li>
-			</ul> </br>
-		git reset HEAD
-			<ul>
-				<li> usuwa plik z poczekalni (gdzie pliki czekają na commit) </li>
-				<li> pozwala cofnąć przypadkowo wysłany do poczekalni plik i zapobiec commitowania go lub jak mamy kilka plików, gdy nie chcemy wysyłać ich jako jeden wspólny commit </li>
-				<li> git reset HEAD index.html </li>
-			</ul> </br>
-		gitk -all
-			<ul>
-				<li> pokazuje wszystkie referencje (gałęzie, tagi itp.) </li>
-				<li> pozwala zrobić tzw. szybkie spojrzenie na całość projektu, przydaje się w organizacji </li>
-				<li> gitk -all </li>
-			</ul> </br>
-		git branch --merged
-			<ul>
-				<li> tylko gałęzie których końcówki są scalone z nazwanym commitem zostaną wylistowane </li>
-				<li> pomaga w organizacji </li>
-				<li> git branch --merged </li>
-			</ul> </br>
-	    	git config --global user.email ""
-			<ul>
-				<li> ustawia globalny e-mail użytkownika (w raz ustawionego już nie trzeba ingerować) </li>
-				<li> każdy utworzony przez użytkownika commit będzie uwzględniał tę nazwę w sobie, określając Twoją tożsamość </li>
-				<li> git config --global user.email "wrex.shepard@gmail.com" </li>
-			</ul> </br>
-		git checkout -b "branch"
-			<ul>
-				<li> Podanie -b powoduje utworzenie nowej gałęzi o danej nazwie, a następnie zostaje ona sprawdzona </li>
-				<li> przyśpiesza pracę </li>
-				<li> git checkout -b kolejne_poprawki_FO7 </li>
-			</ul> </br>
-		git branch -d "branch"
-			<ul>
-				<li> usuwa gałąź jeśli ta jest już scalona, (jeśli nie to -D) </li>
-				<li> pomaga w usuwaniu niepotrzebnych zapychaczy w projekcie, błędu </li>
-				<li> git branch -d usun_mnie </li>
-			</ul> </br>
-		git commit -a -m ""
-			<ul>
-				<li> -a dodaje do commita pliki zmodyfikowane lub usunięte, -m załącza opis co ten commit wnosi </li>
-				<li> funkcja pomocna, żeby nie commitować wszystkiego osobno i żeby było wiadomo co zostało zmienione </li>
-				<li> git commit -a -m "finalne_poprawki_dzialania_f.ekonomii" </li>
-			</ul> </br>
-		git branch "name"	
-			<ul>
-				<li> tworzy gałąź o danej nazwie </li>
-				<li> np. pomaga w dodaniu jakiejś funkcji dodatkowej do projektu, ale nie mieszając w głównym projekcie dopóki nie będzie działać</li>
-				<li> git branch Jak_wytresowac_smoka </li>
+				<li> cofa zmiany, wracając do plików wyjściowych </br> 
+		można regulować ile zrobionych przez nas commitów ma być cofniętych np <code> git reset HEAD^ </code>, cofnie nam o jeden, natomiast <code> git reset HEAD~2 </code> o dwa </li>
+				<li> gdy po modyfikowaniu, usuwaniu i dodawaniu wierszy w plikach, okazuje się, że zmiany nie są dobre i chcemy wrócić do wyjściowego pliku </li>
+				<li> <code> git reset HEAD index.html </code> </li>
 			</ul> </br>
 	</body>
 </html>
