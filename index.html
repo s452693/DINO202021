@@ -12,5 +12,16 @@
 	<body>
 		<h3>git remote add "remote_name" "git url"</h3>
 		<p>komenda służąca do dodania nowego zdalnego repozytorium, która przyjmuje dwa argumenty: "remote_name" czyli nazwę zdalnego repozytorium oraz url do niego "git url". (Przykład: git remote add "nazwa" "https://github.com/user/repo.git")</p>
-		
+		<dl>
+			<dt>git blame -C "filename"</dt>
+			<dd>
+				Komenda poprzedza każdą linię w pliku "filename" informacją o miejscu, autorze oraz czasie ostatniej modyfikacji danej linii.
+				Nie podaje jednak informacji na temat usuniętych oraz zastąpionych linii. 
+				Dzięki opcji <code>-C</code> wykrywa linie skopiowane z innych plików w repozytorium.
+				Przykładowy wynik komendy działania <code>git blame -C index.html</code>:
+<pre><code>a0ddc9f8 (Patryk Żywica 2020-11-10 19:37:44 +0100 1) &lt;html&gt;
+a0ddc9f8 (Patryk Żywica 2020-11-10 19:37:44 +0100 2) 	&lt;body&gt;pusta strona&lt;/body&gt;
+a0ddc9f8 (Patryk Żywica 2020-11-10 19:37:44 +0100 3) &lt;/html&gt;</code></pre>
+			</dd>
+		</dl>
 </html>
