@@ -10,10 +10,20 @@
     </head>
 
 	<body>
-		<h3>git remote add "remote_name" "git url"</h3>
+    
+    		<h2> git reset HEAD </h2>
+			<ul>
+				<li> cofa zmiany, wracając do plików wyjściowych </br> 
+		można regulować ile zrobionych przez nas commitów ma być cofniętych np <code> git reset HEAD^ </code>, cofnie nam o jeden, natomiast <code> git reset HEAD~2 </code> o dwa </li>
+				<li> gdy po modyfikowaniu, usuwaniu i dodawaniu wierszy w plikach, okazuje się, że zmiany nie są dobre i chcemy wrócić do wyjściowego pliku </li>
+				<li> <code> git reset HEAD index.html </code> </li>
+			</ul> </br>
+    
+
+		<h2>git remote add "remote_name" "git url"</h2>
 		<p>komenda służąca do dodania nowego zdalnego repozytorium, która przyjmuje dwa argumenty: "remote_name" czyli nazwę zdalnego repozytorium oraz url do niego "git url". (Przykład: git remote add "nazwa" "https://github.com/user/repo.git")</p>
 				
-    <h3>git commit -a -m ""</h3>
+    <h2>git commit -a -m ""</h2>
 		<p>
 			git commit - zatwierdza zmodyfikowane i usunięte pliki w danym repozytorium.</br>
 			-a (all - wszystkie) - parametr, dzięki któremu zatwierdzone zostaną wszystkie zmiany. </br>
@@ -33,4 +43,7 @@ a0ddc9f8 (Patryk Żywica 2020-11-10 19:37:44 +0100 2) 	&lt;body&gt;pusta strona&
 a0ddc9f8 (Patryk Żywica 2020-11-10 19:37:44 +0100 3) &lt;/html&gt;</code></pre>
 			</dd>
 		</dl>
+
+</body>
 </html>
+
