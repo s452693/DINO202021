@@ -1,11 +1,26 @@
-<html>
+<!DOCTYPE HTML>
+<html lang="pl">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Komendy Git</title>
+        <meta name="description" content="Spis komend Git'a wraz z ich opisami uzycia." />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="author" content="Paulina Stefaniuk" />
+    </head>
+
 	<body>
-		<h2> git reset HEAD </h2>
+    
+    		<h2> git reset HEAD </h2>
 			<ul>
 				<li> cofa zmiany, wracając do plików wyjściowych </br> 
 		można regulować ile zrobionych przez nas commitów ma być cofniętych np <code> git reset HEAD^ </code>, cofnie nam o jeden, natomiast <code> git reset HEAD~2 </code> o dwa </li>
 				<li> gdy po modyfikowaniu, usuwaniu i dodawaniu wierszy w plikach, okazuje się, że zmiany nie są dobre i chcemy wrócić do wyjściowego pliku </li>
 				<li> <code> git reset HEAD index.html </code> </li>
 			</ul> </br>
-	</body>
+    
+		<h3>git remote add "remote_name" "git url"</h3>
+		<p>komenda służąca do dodania nowego zdalnego repozytorium, która przyjmuje dwa argumenty: "remote_name" czyli nazwę zdalnego repozytorium oraz url do niego "git url". (Przykład: git remote add "nazwa" "https://github.com/user/repo.git")</p>
+		
+
 </html>
