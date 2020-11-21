@@ -11,25 +11,25 @@
 
 	<body>
 
-	<h2>git config --global user.name ""</h2>
+		<h2>git config --global user.name ""</h2>
              <ul>
                  <li>Komenda ustawia użytkownikowi atrybut user.name dla wszystkich repozytoriów znajdujących się na jego komputerze. Potem w przypadku użycia komendy sprawdzającej historię nowych wersji repozytorium wszystkie wszystkie wpisy dotyczące tego użytkownika będą posiadały wprowadzone przez niego tą komendą dane.</li>
                  <li>Komenda ta jest bardzo przydatna w przypadku gdy osoba posiada wiele repozytoriów nad którymi pracuje i w każdym z nich może identyfikować się tymi samymi danymi.</li>
                  <li>Przypadek użycia dla Jana Kowalskiego byłby: <code>git config --global user.name "Jan Kowalski"</code>.</li>
              </ul></br>
-    
+
     		<h2> git reset HEAD </h2>
 			<ul>
-				<li> cofa zmiany, wracając do plików wyjściowych </br> 
+				<li> cofa zmiany, wracając do plików wyjściowych </br>
 		można regulować ile zrobionych przez nas commitów ma być cofniętych np <code> git reset HEAD^ </code>, cofnie nam o jeden, natomiast <code> git reset HEAD~2 </code> o dwa </li>
 				<li> gdy po modyfikowaniu, usuwaniu i dodawaniu wierszy w plikach, okazuje się, że zmiany nie są dobre i chcemy wrócić do wyjściowego pliku </li>
 				<li> <code> git reset HEAD index.html </code> </li>
 			</ul> </br>
-    
+
 
 		<h2>git remote add "remote_name" "git url"</h2>
 		<p>komenda służąca do dodania nowego zdalnego repozytorium, która przyjmuje dwa argumenty: "remote_name" czyli nazwę zdalnego repozytorium oraz url do niego "git url". (Przykład: git remote add "nazwa" "https://github.com/user/repo.git")</p>
-				
+
     <h2>git commit -a -m ""</h2>
 		<p>
 			git commit - zatwierdza zmodyfikowane i usunięte pliki w danym repozytorium.</br>
@@ -38,11 +38,18 @@
 			"" - miejsce na krótką wiadomość.</br>
 		</p>
 
+    <h2>git checkout "branch"</h2>
+		<p>
+			Komenda git checkout pozwala zmienić gałąź na której pracujemy.</br>
+			Wywołanie komendy git checkout "branch" przełączy nas na gałąź o nazwie "branch" i zaktualizuje pliki w katalogu roboczym na te z wybranej gałęzi.</br>
+			Jeśli gałąź o nazwie "branch" nie istnieje, komenda nie zadziała. Aby stworzyć nową gałąź o tej nazwie należy poprzedzić nazwę gałęzi flagą -b (git checkout -b "branch").</br>
+		</p>
+
 		<dl>
 			<dt>git blame -C "filename"</dt>
 			<dd>
 				Komenda poprzedza każdą linię w pliku "filename" informacją o miejscu, autorze oraz czasie ostatniej modyfikacji danej linii.
-				Nie podaje jednak informacji na temat usuniętych oraz zastąpionych linii. 
+				Nie podaje jednak informacji na temat usuniętych oraz zastąpionych linii.
 				Dzięki opcji <code>-C</code> wykrywa linie skopiowane z innych plików w repozytorium.
 				Przykładowy wynik komendy działania <code>git blame -C index.html</code>:
 <pre><code>a0ddc9f8 (Patryk Żywica 2020-11-10 19:37:44 +0100 1) &lt;html&gt;
