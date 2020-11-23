@@ -11,7 +11,7 @@
 
 	<body>
     
-    		<h2> git reset HEAD </h2>
+    	<h2> git reset HEAD </h2>
 			<ul>
 				<li> cofa zmiany, wracając do plików wyjściowych </br> 
 		można regulować ile zrobionych przez nas commitów ma być cofniętych np <code> git reset HEAD^ </code>, cofnie nam o jeden, natomiast <code> git reset HEAD~2 </code> o dwa </li>
@@ -21,19 +21,23 @@
     
 
 		<h2>git remote add "remote_name" "git url"</h2>
-		<p>komenda służąca do dodania nowego zdalnego repozytorium, która przyjmuje dwa argumenty: "remote_name" czyli nazwę zdalnego repozytorium oraz url do niego "git url". (Przykład: git remote add "nazwa" "https://github.com/user/repo.git")</p>
-				
+		<ul>
+		<p>Komenda służąca do dodania nowego zdalnego repozytorium, która przyjmuje dwa argumenty: "remote_name" czyli nazwę zdalnego repozytorium oraz url do niego "git url". (Przykład: git remote add "nazwa" "https://github.com/user/repo.git")</p>
+		</ul></br>
     <h2>git commit -a -m ""</h2>
-		<p>
-			git commit - zatwierdza zmodyfikowane i usunięte pliki w danym repozytorium.</br>
-			-a (all - wszystkie) - parametr, dzięki któremu zatwierdzone zostaną wszystkie zmiany. </br>
-		   	-m (message - wiadomość) - parametr, którty oznacza dodanie do "commita" krótkiej wiadomości.</br>
-			"" - miejsce na krótką wiadomość.</br>
-		</p>
+		<ul>
+			<p>
+				Git commit - zatwierdza zmodyfikowane i usunięte pliki w danym repozytorium.</br>
+				<li>a (all - wszystkie) - parametr, dzięki któremu zatwierdzone zostaną wszystkie zmiany. </br>
+				<li>m (message - wiadomość) - parametr, którty oznacza dodanie do "commita" krótkiej wiadomości.</br>
+				<li>"" - miejsce na krótką wiadomość.</br>
+			</p>
+		</ul></br>
 
-		<dl>
-			<dt>git blame -C "filename"</dt>
-			<dd>
+		
+	<h2>git blame -C "filename"</h2>
+		<ul>	
+			<p>
 				Komenda poprzedza każdą linię w pliku "filename" informacją o miejscu, autorze oraz czasie ostatniej modyfikacji danej linii.
 				Nie podaje jednak informacji na temat usuniętych oraz zastąpionych linii. 
 				Dzięki opcji <code>-C</code> wykrywa linie skopiowane z innych plików w repozytorium.
@@ -41,8 +45,19 @@
 <pre><code>a0ddc9f8 (Patryk Żywica 2020-11-10 19:37:44 +0100 1) &lt;html&gt;
 a0ddc9f8 (Patryk Żywica 2020-11-10 19:37:44 +0100 2) 	&lt;body&gt;pusta strona&lt;/body&gt;
 a0ddc9f8 (Patryk Żywica 2020-11-10 19:37:44 +0100 3) &lt;/html&gt;</code></pre>
-			</dd>
-		</dl>
+			</p>
+		</ul></br>
+	
+	<h2>git config --global color.ui true</h2>
+		<ul>
+			<p>
+				Jest głównym przełącznikiem pozwalającym konfigurować koloryzowanie danych wyjścia. Opcja:</br>
+				<li>auto - ustawiona jest domyślnie, koloruje jedynie dane wyjściowe trafiające prosto do terminalu</br>
+				<li>true - włącza pełne koloryzowanie danych wyjściowych trafiających zarówno do terminala jak i np pliku</br>
+				<li>false - wyłącza opcję koloryzowania danych wyjściowych</br>
+			</p>
+		</ul>
+		
 
 </body>
 </html>
