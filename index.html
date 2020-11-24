@@ -6,7 +6,6 @@
         <title>Komendy Git</title>
         <meta name="description" content="Spis komend Git'a wraz z ich opisami uzycia." />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <meta name="author" content="Paulina Stefaniuk" />
     </head>
 
 	<body>
@@ -47,6 +46,22 @@ a0ddc9f8 (Patryk Żywica 2020-11-10 19:37:44 +0100 2) 	&lt;body&gt;pusta strona&
 a0ddc9f8 (Patryk Żywica 2020-11-10 19:37:44 +0100 3) &lt;/html&gt;</code></pre>
 			</p>
 		</ul></br>
+		
+		
+	<h2>git branch "name"</h2>
+		<ul>
+			<p>Komenda git branch za argument przyjmuje ciąg znaków i tworzy nowy branch o podanej nazwie "name". Może być przydatne np. gdy podczas prac nad działającą aplikacją nie chcemy jej zepsuć, co umożliwia nam stworzenie nowego brancha dedykowanego wprowadzanym zmianom.</p>
+		</ul>
+		
+		
+	<h2>git config --global user.name ""</h2>
+		<ul>
+			<p>Komenda służy do wykonania pierwszych konfiguracji gita. Wystarczy dokonać tej konfiguracji tylko raz (informacje zostaną zachowane nawet po aktualizacji). Za pomocą parametrów, które są wykorzystywane powyżej następuje przypisanie wszystkich tworzonych zmian do konkretnego użytkownika. </br>
+			Paramter <code>--global</code> jest opcjonalny, jednak to on odpowiada za to, że dane pozostają nienaruszone po zmianach w aplikacji (np. po aktualizacji)</br>
+			Parametr <code>user.name</code> mówi o tym, co zamierzamy skonfigurować - w tym przypadku jest to nazwa użytkownika. </br>
+			<code>""</code> w cudysłowiu należy podać wartość, która jest nazwą użytkownika, z którą chcemy być identyfikowani w dalszej części pracy nad projektem. </p>	
+		</ul>
+	
 	
 	<h2>git config --global color.ui true</h2>
 		<ul>
