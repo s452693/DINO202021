@@ -11,11 +11,11 @@
 
 	<body>
 
-	<h2>git config --global user.name ""</h2>
+	<h2>git branch -v</h2>
              <ul>
-                 <li>Komenda ustawia użytkownikowi atrybut user.name dla wszystkich repozytoriów znajdujących się na jego komputerze. Potem w przypadku użycia komendy sprawdzającej historię nowych wersji repozytorium wszystkie wszystkie wpisy dotyczące tego użytkownika będą posiadały wprowadzone przez niego tą komendą dane.</li>
-                 <li>Komenda ta jest bardzo przydatna w przypadku gdy osoba posiada wiele repozytoriów nad którymi pracuje i w każdym z nich może identyfikować się tymi samymi danymi.</li>
-                 <li>Przypadek użycia dla Jana Kowalskiego byłby: <code>git config --global user.name "Jan Kowalski"</code>.</li>
+                 <li>Komenda listuje wszystkie dostępne gałęzie w danym repozytorium.</li>
+		 <li>-v - wyświetla dodatkowe informacje na temat ostatnich commitów wykonanych na poszczególnych gałęziach.</li>
+                 <li>Komenda ta jest bardzo przydatna w przypadku gdy osoba posiada wiele gałęzi nad którymi pracuje i chce odnaleźć tę która go aktualnie interesuje.</li>
              </ul></br>
     
     		<h2> git reset HEAD </h2>
@@ -38,6 +38,13 @@
 			"" - miejsce na krótką wiadomość.</br>
 		</p>
 
+    <h2>git checkout "branch"</h2>
+		<p>
+			Komenda git checkout pozwala zmienić gałąź na której pracujemy.</br>
+			Wywołanie komendy git checkout "branch" przełączy nas na gałąź o nazwie "branch" i zaktualizuje pliki w katalogu roboczym na te z wybranej gałęzi.</br>
+			Jeśli gałąź o nazwie "branch" nie istnieje, komenda nie zadziała. Aby stworzyć nową gałąź o tej nazwie należy poprzedzić nazwę gałęzi flagą -b (git checkout -b "branch").</br>
+		</p>
+
 		<dl>
 			<dt>git blame -C "filename"</dt>
 			<dd>
@@ -50,6 +57,15 @@ a0ddc9f8 (Patryk Żywica 2020-11-10 19:37:44 +0100 2) 	&lt;body&gt;pusta strona&
 a0ddc9f8 (Patryk Żywica 2020-11-10 19:37:44 +0100 3) &lt;/html&gt;</code></pre>
 			</dd>
 		</dl>
+        <h2>git branch "name"</h2>
+<p>Komenda git branch za argument przyjmuje ciąg znaków i tworzy nowy branch o podanej nazwie "name". Może być przydatne np. gdy podczas prac nad działającą aplikacją nie chcemy jej zepsuć, co umożliwia nam stworzenie nowego brancha dedykowanego wprowadzanym zmianom.</p>
+
+	<h2>git config --global user.name ""</h2>
+    <p>Komenda służy do wykonania pierwszych konfiguracji gita. Wystarczy dokonać tej konfiguracji tylko raz (informacje zostaną zachowane nawet po aktualizacji). Za pomocą parametrów, które są wykorzystywane powyżej następuje przypisanie wszystkich tworzonych zmian do konkretnego użytkownika. </p>
+    <p>Paramter <code>--global</code> jest opcjonalny, jednak to on odpowiada za to, że dane pozostają nienaruszone po zmianach w aplikacji (np. po aktualizacji)</p>
+    <p>Parametr <code>user.name</code> mówi o tym, co zamierzamy skonfigurować - w tym przypadku jest to nazwa użytkownika. </p>
+    <p><code>""</code> w cudysłowiu należy podać wartość, która jest nazwą użytkownika, z którą chcemy być identyfikowani w dalszej części pracy nad projektem. </p>
 
 </body>
 </html>
+
