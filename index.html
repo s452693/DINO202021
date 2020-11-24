@@ -17,7 +17,7 @@
                  <li>Komenda ta jest bardzo przydatna w przypadku gdy osoba posiada wiele gałęzi nad którymi pracuje i chce odnaleźć tę która go aktualnie interesuje.</li>
              </ul></br>
     
-    	<h2> git reset HEAD </h2>
+    		<h2> git reset HEAD </h2>
 			<ul>
 				<li> cofa zmiany, wracając do plików wyjściowych </br> 
 		można regulować ile zrobionych przez nas commitów ma być cofniętych np <code> git reset HEAD^ </code>, cofnie nam o jeden, natomiast <code> git reset HEAD~2 </code> o dwa </li>
@@ -27,18 +27,15 @@
     
 
 		<h2>git remote add "remote_name" "git url"</h2>
-		<ul>
-		<p>Komenda służąca do dodania nowego zdalnego repozytorium, która przyjmuje dwa argumenty: "remote_name" czyli nazwę zdalnego repozytorium oraz url do niego "git url". (Przykład: git remote add "nazwa" "https://github.com/user/repo.git")</p>
-		</ul></br>
+		<p>komenda służąca do dodania nowego zdalnego repozytorium, która przyjmuje dwa argumenty: "remote_name" czyli nazwę zdalnego repozytorium oraz url do niego "git url". (Przykład: git remote add "nazwa" "https://github.com/user/repo.git")</p>
+				
     <h2>git commit -a -m ""</h2>
-		<ul>
-			<p>
-				Git commit - zatwierdza zmodyfikowane i usunięte pliki w danym repozytorium.</br>
-				<li>a (all - wszystkie) - parametr, dzięki któremu zatwierdzone zostaną wszystkie zmiany. </br>
-				<li>m (message - wiadomość) - parametr, którty oznacza dodanie do "commita" krótkiej wiadomości.</br>
-				<li>"" - miejsce na krótką wiadomość.</br>
-			</p>
-		</ul></br>
+		<p>
+			git commit - zatwierdza zmodyfikowane i usunięte pliki w danym repozytorium.</br>
+			-a (all - wszystkie) - parametr, dzięki któremu zatwierdzone zostaną wszystkie zmiany. </br>
+		   	-m (message - wiadomość) - parametr, którty oznacza dodanie do "commita" krótkiej wiadomości.</br>
+			"" - miejsce na krótką wiadomość.</br>
+		</p>
 
     <h2>git checkout "branch"</h2>
 		<p>
@@ -57,35 +54,17 @@
 <pre><code>a0ddc9f8 (Patryk Żywica 2020-11-10 19:37:44 +0100 1) &lt;html&gt;
 a0ddc9f8 (Patryk Żywica 2020-11-10 19:37:44 +0100 2) 	&lt;body&gt;pusta strona&lt;/body&gt;
 a0ddc9f8 (Patryk Żywica 2020-11-10 19:37:44 +0100 3) &lt;/html&gt;</code></pre>
-			</p>
-		</ul></br>
-		
-		
-	<h2>git branch "name"</h2>
-		<ul>
-			<p>Komenda git branch za argument przyjmuje ciąg znaków i tworzy nowy branch o podanej nazwie "name". Może być przydatna np. gdy podczas prac nad działającą aplikacją nie chcemy jej zepsuć, co umożliwia nam stworzenie nowego brancha dedykowanego wprowadzanym zmianom.</p>
-		</ul>
-		
-		
+			</dd>
+		</dl>
+        <h2>git branch "name"</h2>
+<p>Komenda git branch za argument przyjmuje ciąg znaków i tworzy nowy branch o podanej nazwie "name". Może być przydatne np. gdy podczas prac nad działającą aplikacją nie chcemy jej zepsuć, co umożliwia nam stworzenie nowego brancha dedykowanego wprowadzanym zmianom.</p>
+
 	<h2>git config --global user.name ""</h2>
-		<ul>
-			<p>Komenda służy do wykonania pierwszych konfiguracji gita. Wystarczy dokonać tej konfiguracji tylko raz (informacje zostaną zachowane nawet po aktualizacji). Za pomocą parametrów, które są wykorzystywane powyżej następuje przypisanie wszystkich tworzonych zmian do konkretnego użytkownika. </br>
-			Paramter <code>--global</code> jest opcjonalny, jednak to on odpowiada za to, że dane pozostają nienaruszone po zmianach w aplikacji (np. po aktualizacji)</br>
-			Parametr <code>user.name</code> mówi o tym, co zamierzamy skonfigurować - w tym przypadku jest to nazwa użytkownika. </br>
-			<code>""</code> w cudysłowie należy podać wartość, która jest nazwą użytkownika, z którą chcemy być identyfikowani w dalszej części pracy nad projektem. </p>	
-		</ul>
-	
-	
-	<h2>git config --global color.ui true</h2>
-		<ul>
-			<p>
-				Jest głównym przełącznikiem pozwalającym konfigurować koloryzowanie danych wyjścia. Opcja:</br>
-				<li>auto - ustawiona jest domyślnie, koloruje jedynie dane wyjściowe trafiające prosto do terminalu</br>
-				<li>true - włącza pełne koloryzowanie danych wyjściowych trafiających zarówno do terminala jak i np pliku</br>
-				<li>false - wyłącza opcję koloryzowania danych wyjściowych</br>
-			</p>
-		</ul>
-		
+    <p>Komenda służy do wykonania pierwszych konfiguracji gita. Wystarczy dokonać tej konfiguracji tylko raz (informacje zostaną zachowane nawet po aktualizacji). Za pomocą parametrów, które są wykorzystywane powyżej następuje przypisanie wszystkich tworzonych zmian do konkretnego użytkownika. </p>
+    <p>Paramter <code>--global</code> jest opcjonalny, jednak to on odpowiada za to, że dane pozostają nienaruszone po zmianach w aplikacji (np. po aktualizacji)</p>
+    <p>Parametr <code>user.name</code> mówi o tym, co zamierzamy skonfigurować - w tym przypadku jest to nazwa użytkownika. </p>
+    <p><code>""</code> w cudysłowiu należy podać wartość, która jest nazwą użytkownika, z którą chcemy być identyfikowani w dalszej części pracy nad projektem. </p>
 
 </body>
 </html>
+
