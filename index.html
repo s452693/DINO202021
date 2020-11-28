@@ -41,9 +41,26 @@
 		</ul></br>
 
 
-	<h2>git blame -C "filename"</h2>
-		<ul>	
-			<p>
+
+
+    <h2>git commit -a -m ""</h2>
+		<p>
+			git commit - zatwierdza zmodyfikowane i usunięte pliki w danym repozytorium.</br>
+			-a (all - wszystkie) - parametr, dzięki któremu zatwierdzone zostaną wszystkie zmiany. </br>
+		   	-m (message - wiadomość) - parametr, którty oznacza dodanie do "commita" krótkiej wiadomości.</br>
+			"" - miejsce na krótką wiadomość.</br>
+		</p>
+
+    <h2>git checkout "branch"</h2>
+		<p>
+			Komenda git checkout pozwala zmienić gałąź na której pracujemy.</br>
+			Wywołanie komendy git checkout "branch" przełączy nas na gałąź o nazwie "branch" i zaktualizuje pliki w katalogu roboczym na te z wybranej gałęzi.</br>
+			Jeśli gałąź o nazwie "branch" nie istnieje, komenda nie zadziała. Aby stworzyć nową gałąź o tej nazwie należy poprzedzić nazwę gałęzi flagą -b (git checkout -b "branch").</br>
+		</p>
+
+		<dl>
+			<dt>git blame -C "filename"</dt>
+			<dd>
 				Komenda poprzedza każdą linię w pliku "filename" informacją o miejscu, autorze oraz czasie ostatniej modyfikacji danej linii.
 				Nie podaje jednak informacji na temat usuniętych oraz zastąpionych linii. 
 				Dzięki opcji <code>-C</code> wykrywa linie skopiowane z innych plików w repozytorium.
@@ -89,22 +106,6 @@ a0ddc9f8 (Patryk Żywica 2020-11-10 19:37:44 +0100 3) &lt;/html&gt;</code></pre>
 		</p>
   </ul>
 		
-	<h2>git fetch "remote" "branch"</h2>
-		<ul>
-			<p>Polecenie pobiera dane, które znajdują się w zdalnym repozytorium do lokalnego repozytorium. 
-			   Ściąga wszystkie nowe zmiany pojawiające się w oryginalnym repozytorium od momentu jego sklonowania lub ostatniego użycia polecenia fetch. 
-			   Fetch pobiera dane, ale nie scala ani nie modyfikuje ich z lokalnymi plikami roboczymi. Wszelkie zmiany można scalać ręcznie w wybranym czasie.
-			</p>
-		</ul>
-	<h2> git config --global user.email "" </h2>
-		<ul>
-			<p>
-				Komenda służąca do konfiguracji użytkwnika która ustawia globalnie nasz adres e-mail.</br>
-				Jest to ważne ponieważ każdy utworzony przez nas commit będzie używać tej inforacji.</br>
-				Wystarczy jednorazowa konfiguracja gdyż opcja --global zapisuje nasz ustawienie dla każdego projektu.</br>
-				Jeśli jednak istnieje potrzeba ustawienia opcji dla danego projektu można użyć komendy bez --global</br>
-				wtedy ustawnie zostanie zapisane tylko dla konkretnego projektu.</br>
-			</p>
-		</ul>
+
 </body>
 </html>
