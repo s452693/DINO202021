@@ -13,12 +13,21 @@
 	<body>
     
 
+
     	<h2> git branch -d "branch" </h2>
 		<p> Komenda branch operuje na gałęziach, może je przykładowo tworzyć lub listować. Parametr -d usuwa daną gałąź "branch", przy czym 
     można podać ich więcej niż jedną. Jeśli jakaś gałąź posiada reflog, to również zostanie on usunięty. 
     Gałąź musi być w pełni zmergowana (scalona) z gałęzią powyżej (upstream) albo HEAD. /p>
     
-    
+
+	<h2>git branch -v</h2>
+             <ul>
+                 <li>Komenda listuje wszystkie dostępne gałęzie w danym repozytorium.</li>
+		 <li>-v - wyświetla dodatkowe informacje na temat ostatnich commitów wykonanych na poszczególnych gałęziach.</li>
+                 <li>Komenda ta jest bardzo przydatna w przypadku gdy osoba posiada wiele gałęzi nad którymi pracuje i chce odnaleźć tę która go aktualnie interesuje.</li>
+             </ul></br>
+
+
     	<h2> git reset HEAD </h2>
 
 			<ul>
@@ -43,10 +52,27 @@
 			</p>
 		</ul></br>
 
-		
-	<h2>git blame -C "filename"</h2>
-		<ul>	
-			<p>
+
+
+
+    <h2>git commit -a -m ""</h2>
+		<p>
+			git commit - zatwierdza zmodyfikowane i usunięte pliki w danym repozytorium.</br>
+			-a (all - wszystkie) - parametr, dzięki któremu zatwierdzone zostaną wszystkie zmiany. </br>
+		   	-m (message - wiadomość) - parametr, którty oznacza dodanie do "commita" krótkiej wiadomości.</br>
+			"" - miejsce na krótką wiadomość.</br>
+		</p>
+
+    <h2>git checkout "branch"</h2>
+		<p>
+			Komenda git checkout pozwala zmienić gałąź na której pracujemy.</br>
+			Wywołanie komendy git checkout "branch" przełączy nas na gałąź o nazwie "branch" i zaktualizuje pliki w katalogu roboczym na te z wybranej gałęzi.</br>
+			Jeśli gałąź o nazwie "branch" nie istnieje, komenda nie zadziała. Aby stworzyć nową gałąź o tej nazwie należy poprzedzić nazwę gałęzi flagą -b (git checkout -b "branch").</br>
+		</p>
+
+		<dl>
+			<dt>git blame -C "filename"</dt>
+			<dd>
 				Komenda poprzedza każdą linię w pliku "filename" informacją o miejscu, autorze oraz czasie ostatniej modyfikacji danej linii.
 				Nie podaje jednak informacji na temat usuniętych oraz zastąpionych linii. 
 				Dzięki opcji <code>-C</code> wykrywa linie skopiowane z innych plików w repozytorium.
@@ -82,10 +108,18 @@ a0ddc9f8 (Patryk Żywica 2020-11-10 19:37:44 +0100 3) &lt;/html&gt;</code></pre>
 				<li>false - wyłącza opcję koloryzowania danych wyjściowych</br>
 			</p>
 		</ul>
+
+<h2>git diff --staged</h2>
+  <ul>
+		<p>
+			<li> git diff - komenda pokazuje różnice między katalogiem w którym aktualnie się znajdujemy a listą plików które mają zostać scommitowane</br>
+
+      <li> opcja --staged działa tak samo jak opcja --cached, dzięki niej komenda git diff pokazuje różnice między plikami które mają zostać scommitowane a tymi, które znajdują się w Head</br>
+		</p>
+  </ul>
 		
 
 </body>
-
 
 </html>
 
